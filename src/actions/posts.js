@@ -29,7 +29,7 @@ export function getPosts() {
   return async (dispatch) => {
     dispatch(getPostsRequest());
 
-    const response = await axios.get(POSTS_URL);
+    const response = await axios.get(`${POSTS_URL}`);
     console.log({ response });
 
     if (response.status !== 200) {

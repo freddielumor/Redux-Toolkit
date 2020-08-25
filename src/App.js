@@ -11,7 +11,7 @@ import "./app.scss";
 const App = () => (
   <Provider store={store}>
     <div className="app">
-      <h1>
+      <h1 className="app__heading">
         <a href="/">Redux Toolkit</a>
       </h1>
 

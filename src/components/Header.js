@@ -1,12 +1,17 @@
 import React from "react";
-import { BrowserRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "./Header.scss";
 
 const Header = () => {
   return (
-    <>
-      <Link to="/users">Users</Link>
-      <Link to="/posts">Posts</Link>
-    </>
+    <div className="header">
+      <Link className="header__link" to="/users">
+        Users
+      </Link>
+      <Link className="header__link" to="/posts">
+        Posts
+      </Link>
+    </div>
   );
 };
 

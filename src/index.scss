@@ -16,4 +16,9 @@ code {
 a {
   text-decoration: none !important;
   transition: 0.4s all ease;
+  color: #764bbc;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
