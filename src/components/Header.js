@@ -5,6 +5,9 @@ import "./Header.scss";
 const Header = () => {
   return (
     <div className="header">
+      <Link className="header__link" to="/">
+        Home
+      </Link>
       <Link className="header__link" to="/users">
         Users
       </Link>
