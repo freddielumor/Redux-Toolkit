@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getPosts } from "../actions/posts";
-import { getStorePosts } from "../selectors/index";
+import { getPosts, getAllPosts } from "../redux/postsSlice";
 import PostCard from "./PostCard";
 import "./Posts.scss";
 
 const Posts = () => {
-  const allPosts = useSelector(getStorePosts) || [];
   const dispatch = useDispatch();
+  const allPosts = useSelector(getAllPosts) || [];
 
   useEffect(() => {
     dispatch(getPosts());
